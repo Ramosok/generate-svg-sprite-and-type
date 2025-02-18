@@ -6,7 +6,7 @@ import { parseStringPromise } from 'xml2js';
 // Путь к спрайту
 const spritePath = path.resolve(
   __dirname,
-  'src/components/Inputs/InputPhone/components/SpriteFlagDisplay/sprite/sprite.svg'
+  'путь к папке со спрайтом'
 );
 
 // Чтение и парсинг спрайта
@@ -26,7 +26,7 @@ fs.readFile(spritePath, 'utf-8', async (err, data) => {
   fs.writeFileSync(
     path.resolve(
       __dirname,
-      'src/components/Inputs/InputPhone/components/SpriteFlagDisplay/sprite/icon-types.ts'
+      'путь где будут записаны типы'
     ),
     types
   );
